@@ -21,8 +21,8 @@
     border-radius: 5px;
     padding: 5px;
     margin-top: 10px;
-    margin-right: 50%;
-    margin-left: 0%;
+    margin-right: 0%;
+    margin-left: 97%;
     width: fit-content;
     }
 
@@ -32,8 +32,8 @@
     border-radius: 5px;
     padding: 5px;
     margin-top: 10px;
-    margin-left: 50%;
-    margin-right: 0%;
+    margin-left: 0%;
+    margin-right: 50%;
     width: fit-content;
     text-align: right;
     }
