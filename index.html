@@ -102,7 +102,7 @@
                                 </href>
                                 <div class="chat-container" style="overflow:scroll; width:540px; height:210px;">
                                     <div class="bot-message">안녕하십니까? 아리카입니다. 식습관, 운동습관, 자세 중 어느것을 물어보시겠습니까? 대화를 끝내고 싶다면
-                                        위 [-] 버튼을 클릭해 주세요.</div>
+                                        위 [-] 버튼을 클릭해 주서요.</div>
                                 </div>
                                 <input class="user-input" type="text" placeholder="메시지를 입력하세요." autofocus>
                                 <script>
@@ -113,10 +113,12 @@
                                     // Add an event listener to the user input box for when the user hits "Enter"
                                     userInput.addEventListener('keydown', (event) => {
                                         if (event.keyCode === 13) {
+                                            event.preventDefault();
                                             // Get the user's message and create a new message element
                                             const userMessage = userInput.value;
                                             const userMessageElement = document.createElement('div');
                                             userMessageElement.classList.add('user-message');
+                                            
 
                                             userMessageElement.textContent = userMessage;
 
