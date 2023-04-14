@@ -50,7 +50,7 @@
 <body style="background-color: #aea1f0;">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <img class="navbar-brand" src="./carer.png" style="width: 4cm; height: 2cm;">
+            <a href="index.html"><img class="navbar-brand" src="./carer.png" style="width: 4cm; height: 2cm;"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -59,7 +59,11 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <input type="search"><input type="button" value="검색">
+                        <form class="form-inline" action="https://www.google.com/search" method="GET">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="q" placeholder="검색...">  
+                            </div>
+                        </form>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Eating Habits</a>
@@ -88,7 +92,7 @@
                         <label for="layerPopup">chatbot</label>
                         <div id="layer_bg" style="top: 12rem;">
                             <div id="popup" style="position: relative;z-index: 1;">
-                                <h1>Title
+                                <h1>Chatbot
                                     <label for="layerPopup" style="position: absolute;left: 32rem;">
                                         <h1>[-]</h1> <!--Close-->
                                     </label>
@@ -96,7 +100,7 @@
                                 <hr style="height: 10px; background-color: purple;">
                                 <link href="style1.css" rel="stylesheet">
                                 </href>
-                                <div class="chat-container">
+                                <div class="chat-container" style="overflow:scroll; width:540px; height:210px;">
                                     <div class="bot-message">안녕하십니까? 아리카입니다. 식습관, 운동습관, 자세 중 어느것을 물어보시겠습니까? 대화를 끝내고 싶다면
                                         위 [-] 버튼을 클릭해 주서요.</div>
                                 </div>
@@ -194,9 +198,10 @@
     <footer id="nav-footer" class="page-footer text-center text-white" style="background-color: #424242;">
         <p class="h6"><br><br>
             작성자 : 김면성, 박찬우, 이종서, 백태규 <br>작성자 이메일<br><br><br>김면성(holym3288@gmail.com)
-            <br>박찬우(devchanwoopark@gmail.com)<br>이종서(roina060621@gmail.com)<br>뱍태규(2321413@yeungnam.hs.kr)<br><br><br>
+            <br>박찬우(devchanwoopark@gmail.com)<br>이종서(roina060621@gmail.com)<br>백태규(2321413@yeungnam.hs.kr)<br><br><br>
             
         </p>
     </footer>
 </body>
 </html>
+
